@@ -577,6 +577,31 @@ console.log(`abc
     let result = true ? 1 : 100;
     ```
 
+    - 문제 : 다음 if문을 3항 연산자로 만들어보세요.
+    ```js
+    // 문제1
+    let money = 500;
+    if (money < 1300) {
+        console.log('버스를 탈 수 없습니다.');
+    } else {
+        console.log('버스를 탔습니다.');
+    }
+
+    money < 1300 ? console.log('버스를 탈 수 없습니다.') : console.log('버스를 탔습니다.');
+
+    // 문제2
+    let money = 500;
+    if (money < 1300) {
+        money += 1000;
+    } else if (money < 2000) {
+        money += 500;
+    } else {
+        money += 100;
+    }
+
+    money < 1300 ? money += 1000 : (money < 2000 ? money += 500 : money += 100);
+    ```
+
 ## 반복문
 
 -   for
